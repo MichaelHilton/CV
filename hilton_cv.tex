@@ -7,9 +7,32 @@
 
 \bibliography{hilton_cv}
 
+
+\newcommand{\makeauthorbold}[1]{%
+\DeclareNameFormat{author}{%
+  \ifnumequal{\value{listcount}}{1}
+    {\ifnumequal{\value{liststop}}{1}
+      {\expandafter\ifstrequal{##1}{#1}{\textbf{##1\addcomma\addspace ##4\addcomma\isdot}}{##1\addcomma\addspace ##4\addcomma\isdot}}
+      {\expandafter\ifstrequal{##1}{#1}{\textbf{##1\addcomma\addspace ##4}}{##1\addcomma\addspace ##4}}}
+    {\ifnumless{\value{listcount}}{\value{liststop}}
+      {\expandafter\ifstrequal{##1}{#1}{\textbf{\addcomma\addspace ##1\addcomma\addspace ##4}}{\addcomma\addspace ##1\addcomma\addspace ##4}}
+      {\expandafter\ifstrequal{##1}{#1}{\textbf{\addcomma\addspace ##1\addcomma\addspace ##4\addcomma\isdot}}{\addcomma\addspace ##1\addcomma\addspace ##4\addcomma\isdot}}%
+    }%
+}%
+}
+\makeauthorbold{Hilton}
+
+
+
 %\addtocategory{conferences}{chronicler,vmvm,phosphor,encos,vmvmvm,synapse,columbus,electrictest,hitoshiio,dyclink}
-%\addtocategory{csed}{halo-sse,halo,cseet}
+%\addtocategory{csed}{DBLP:journals/corr/OmarVHAH16,nguyen2016api,DBLP:conf/kbse/HiltonTHMD16,TDDViz:Hilton,hilton2014refactoring,janzen2013evaluation,hilton2012teaching}
 %\addtocategory{workshops}{iwsc16,vmvm-demo,wow-wic,phosphor-demo,fse-docsym}
+
+
+\addtocategory{conferences}{DBLP:journals/corr/OmarVHAH16,nguyen2016api,DBLP:conf/kbse/HiltonTHMD16,TDDViz:Hilton,hilton2014refactoring,janzen2013evaluation,hilton2012teaching}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%% End Publications Info %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -125,7 +148,7 @@ San Diego, CA USA
 \begin{outerlist}
 
 \item[] B.S.,
-        \href{www.cs.sdsu.edu/}
+        \href{https://www.cs.sdsu.edu/}
              {Computer Science}, May 2002, \emph{Cum Laude}
 \end{outerlist}
 \vspace{.5\baselineskip}
@@ -136,57 +159,85 @@ El Cajon, CA USA
 \begin{outerlist}
 
 \item[] A.S.,
-        \href{http://www.grossmont.edu/}
+%        \href{http://www.grossmont.edu/}
              May 1999
 \end{outerlist}
 
 \section{Awards and Honors}
-\textbf{Distinguished Paper Awards}\\
-Awarded to the top papers at a conference. Received at ICPC 2016 and ICSE 2014.
+\textbf{Distinguished Paper Award}\\
+Awarded to the top papers at a conference. Received at FSE 2016.
 
-\textbf{Paul Charles Michelman Memorial Award for Exemplary Service}  \\
-Columbia University Department of Computer Science. Given to a student in Computer Science who has performed exemplary service to the department, devoting time and effort beyond the call to further the department's goals. 2013, 2014 and 2016.
+\textbf{J.L. Moore Doctoral Fellowship}  \\
+Awarded to Cal Poly CSC graduates who persue Doctoral Studies in Computer Science. Received 2013,2014,2015
 
-\textbf{Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service}  \\
-Columbia University Department of Computer Science. Given to a student in Computer Science who has made outstanding contributions to teaching in the Department and exemplary service to the Department and its mission. 2010.
 
 \vspace{-5pt}
+
+%
+%\nocite{*}
+%\bibliography{publications}
+%\bibliographystyle{ieeetr}
+%\vspace{3pt}
+
+
 
 \section{Publications}
 
 \begin{publications}
 \printbib{conferences}
-\vspace{-5pt}
-\printbib{csed}
-\vspace{-5pt}
-\printbib{workshops}
+%\vspace{-5pt}
+%\printbib{csed}
+%\vspace{-5pt}
+%\printbib{workshops}
 
 \end{publications}
 \vspace{-10pt}
 
-\section{Invited Talks}
-
-\begin{bibsection}
-\item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' University of Washington, November 2016.
-\item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' University of Delaware, September 2016.
-\item \item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' Carnegie Mellon, April 2016.
-\item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' George Mason University, March 2016.
-\item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' Georgia Tech, February 2016.
-\item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' IBM TJ Watson, January 2016.
-\item ``Faster, More Reliable Builds,'' University of Illinois at Urbana-Champaign, December 2015.
-\item ``Practical Dynamic Taint Tracking in the JVM,'' University of Illinois at Urbana-Champaign, December 2015.
-%\item ``Faster, More Reliable Builds,'' IBM TJ Watson, December 2015.
-\item ``Practical Dynamic Taint Tracking in the JVM,'' IBM Programming Languages Day, November 2015.
-\item ``Test Dependencies and the Future of Build Acceleration,'' CUNY City Tech Computer Systems Colloqium, September 2015.
-\item ``Accelerating Software Testing'', Georgia Tech Software Engineering Group Seminar, November 2014.
-\item ``Accelerating Software Testing'', Electric Cloud, inc. internal all-hands meeting, November 2014.
-\end{bibsection}
-
+%\section{Invited Talks}
+%
+%\begin{bibsection}
+%\item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' University of Washington, November 2016.
+%\item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' University of Delaware, September 2016.
+%\item \item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' Carnegie Mellon, April 2016.
+%\item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' George Mason University, March 2016.
+%\item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' Georgia Tech, February 2016.
+%\item ``Making Software More Reliable by Uncovering Hidden Dependencies,'' IBM TJ Watson, January 2016.
+%\item ``Faster, More Reliable Builds,'' University of Illinois at Urbana-Champaign, December 2015.
+%\item ``Practical Dynamic Taint Tracking in the JVM,'' University of Illinois at Urbana-Champaign, December 2015.
+%%\item ``Faster, More Reliable Builds,'' IBM TJ Watson, December 2015.
+%\item ``Practical Dynamic Taint Tracking in the JVM,'' IBM Programming Languages Day, November 2015.
+%\item ``Test Dependencies and the Future of Build Acceleration,'' CUNY City Tech Computer Systems Colloqium, September 2015.
+%\item ``Accelerating Software Testing'', Georgia Tech Software Engineering Group Seminar, November 2014.
+%\item ``Accelerating Software Testing'', Electric Cloud, inc. internal all-hands meeting, November 2014.
+%\end{bibsection}
+%
 
 \section{Teaching Experience}
 
-\href{http://www.columbia.edu}{\textbf{Columbia University}},
-New York, NY USA
+\href{http://www.oregonstate.edu/}{\textbf{Oregon State University}},
+Corvallis, OR USA
+\begin{outerlist}
+%\vspace{-10pt}
+\item[] \textit{Instructor of Record}%
+    \hfill \textbf{Spring Quarter, 2016}
+    \begin{innerlist}%\vspace{-4pt}
+       \item Head TA for COMS~4156: Advanced Software Engineering %\vspace{-2pt}
+        \begin{innerlist}
+            \item Autumn~2009, 2010, 2011, 2012; Spring 2012 
+%            \item Supported 30 students debugging and integrating EJB applications
+  %          \item Graded student designs, programs, and documentation
+            \item Lectured on EJB implementation
+            \item Created a shared git, Confluence, and JIRA environment to support students
+            \item Developed supplementary course
+                material, including EJB tutorials and sample documents, archived online at \\
+                 \url{https://ase.cs.columbia.edu/confluence/display/CS4156F11/Home}
+        \end{innerlist}   
+     \end{innerlist}
+\end{outerlist}
+\vspace{10pt}
+
+\href{http://www.calpoly.edu/}{\textbf{California Polytechnic State University}},
+San Luis Obispo, CA USA
 \begin{outerlist}
 %\vspace{-10pt}
 \item[] \textit{Teaching Assistant}%
@@ -224,6 +275,8 @@ New York, NY USA
 \end{innerlist}
 
 \end{outerlist}
+
+
 
 %\vspace{-5pt}
 \section{Professional and Research Experience}
