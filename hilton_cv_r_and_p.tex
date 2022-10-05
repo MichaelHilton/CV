@@ -1,0 +1,224 @@
+\documentclass[10pt]{article}
+%\bibliographystyle{cv} 
+\usepackage{cv}
+\usepackage{verbatim}
+%%%%%%%%%%%%%%%%%%%%%%%% Begin Publications Info %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myname}[1]{\textbf{#1}}
+
+\bibliography{hilton_cv}
+
+
+\newcommand{\makeauthorbold}[1]{%
+\DeclareNameFormat{author}{%
+  \ifnumequal{\value{listcount}}{1}
+    {\ifnumequal{\value{liststop}}{1}
+      {\expandafter\ifstrequal{##1}{#1}{\textbf{##1\addcomma\addspace ##4\addcomma\isdot}}{##1\addcomma\addspace ##4\addcomma\isdot}}
+      {\expandafter\ifstrequal{##1}{#1}{\textbf{##1\addcomma\addspace ##4}}{##1\addcomma\addspace ##4}}}
+    {\ifnumless{\value{listcount}}{\value{liststop}}
+      {\expandafter\ifstrequal{##1}{#1}{\textbf{\addcomma\addspace ##1\addcomma\addspace ##4}}{\addcomma\addspace ##1\addcomma\addspace ##4}}
+      {\expandafter\ifstrequal{##1}{#1}{\textbf{\addcomma\addspace ##1\addcomma\addspace ##4\addcomma\isdot}}{\addcomma\addspace ##1\addcomma\addspace ##4\addcomma\isdot}}%
+    }%
+}%
+}
+%\makeauthorbold{Hilton}
+
+
+
+%\addtocategory{conferences}{chronicler,vmvm,phosphor,encos,vmvmvm,synapse,columbus,electrictest,hitoshiio,dyclink}
+%\addtocategory{csed}{DBLP:journals/corr/OmarVHAH16,nguyen2016api,DBLP:conf/kbse/HiltonTHMD16,TDDViz:Hilton,hilton2014refactoring,janzen2013evaluation,hilton2012teaching}
+%\addtocategory{workshops}{iwsc16,vmvm-demo,wow-wic,phosphor-demo,fse-docsym}
+
+
+\addtocategory{conferences}{DBLP:conf/ast/ParryHKM22,
+DBLP:conf/icse/ParryKHM22,
+DBLP:journals/tosem/ParryKHM22,
+DBLP:conf/icst/ParryKHM22,
+DBLP:journals/ese/TimperleyHGH21,
+DBLP:conf/lats/Sankaranarayanan21, 
+DBLP:conf/icse/AlshammariMH021, DBLP:journals/ese/TimperleyHGH21, DBLP:conf/aied/Sankaranarayanan20, DBLP:conf/icsm/KolakAGHT20, DBLP:conf/icst/AfzalGHT20,DBLP:conf/sigsoft/WidderHKV19,DBLP:conf/msr/DurieuxGHA20,
+DBLP:conf/aied/Sankaranarayanan19,
+DBLP:conf/icse/NguyenNDNTH19,Hilton0M18,DBLP:conf/msr/WidderHKV18,
+DBLP:conf/icse/HiltonB18,DBLP:conf/icse/BellLHEYM18,
+DBLP:conf/sigsoft/Hilton0TMD17,DBLP:conf/popl/OmarVHAH17,nguyen2016api,xHiltonASE,TDDViz:Hilton,hilton2014refactoring,janzen2013evaluation,hilton2012teaching}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Publications Info %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\makeheading{Michael Hilton}
+
+\sloppy
+
+
+
+
+\section{Appointments}
+
+ \href{https://www.cmu.edu/}{Carnegie Mellon University},
+Pittsburgh, PA USA
+
+2020 - Present\qquad Associate Teaching Professor\\ 
+2022 - Present\qquad Associate Department Head for Education, S3D\\ 
+
+
+
+
+2017 - 2020\qquad Assistant Teaching Professor
+
+\href{http://www.isri.cmu.edu/}{Institute for Software Research (ISR)}
+
+\href{https://www.cs.cmu.edu/}{School of Computer Science (SCS)}    
+
+%\begin{outerlist}
+%        \vspace{-.5\baselineskip}
+%\item[] Assistant Teaching Professor,
+%        \vspace{-.2\baselineskip}
+%        \href{http://eecs.oregonstate.edu/}
+%             {Computer Science},
+%             August 2017 - Present
+%        \begin{innerlist}
+%        \item Thesis Proposal: \emph{Cooperative Task Processing}
+%        \item Candidacy: \emph{Research
+%            Problems in Distributed Control for Energy Systems}
+%        \item Advisor:
+%              \href{http://dig.cs.illinois.edu/}
+%                   {Dr. Danny Dig}
+%        \item Area of Study: Software Engineering 
+%        \item Thesis Topic: \emph{Understanding and Improving Agile Development Practices}
+%
+%        \end{innerlist}
+%        \vspace{-.5\baselineskip}
+%\end{outerlist}
+%\vspace{.5\baselineskip}
+
+
+
+
+
+
+
+
+
+
+%\section{Teaching Interests}
+%
+%Software Engineering,
+%Web Development,
+%Mobile Development,
+%Introduction to Programming,
+%DevOps,
+%Programming for non-CS majors,
+%Building a startup
+%
+%\vspace{-5pt}
+
+
+\section{Publications}
+
+\begin{publications}
+\printbib{conferences}
+\end{publications}
+
+
+%\vspace{-5pt}
+%\printbib{csed}
+%\vspace{-5pt}
+%\printbib{workshops}
+
+
+%\vspace{-10pt}
+
+
+
+
+%\vspace{-5pt}
+\section{Professional Experience}
+
+\href{https://www.microsoft.com/en-us/research/}{\textbf{Microsoft Research}},
+Redmond, WA USA
+%\vspace{-8pt}
+\begin{outerlist}
+\item[] \textit{Research Intern}%
+    \hfill \textbf{May 2017 to August 2017}%\vspace{-4pt}
+    \begin{innerlist}
+    \item Studied how and why developers move between development teams 
+    \end{innerlist}
+\end{outerlist}
+
+\halfblankline
+
+
+\href{http://steadfastinnovation.com/}{\textbf{Steadfast Innovation}},
+San Luis Obispo, CA USA
+%\vspace{-8pt}
+\begin{outerlist}
+\item[] \textit{Mobile HTML5 developer}%
+    \hfill \textbf{March 2013 to August 2013}%\vspace{-4pt}
+    \begin{innerlist}
+    \item Developed HTML5 mobile app with real-time shared drawing capabilities 
+    \end{innerlist}
+\end{outerlist}
+
+\halfblankline
+
+
+{\textbf{Independent Contractor}}, San Luis Obispo, CA USA
+\begin{outerlist}
+%\vspace{-8pt}
+\item[] \textit{Software Developer}%
+    \hfill \textbf{August 2011 to March 2013}
+    \begin{innerlist}%\vspace{-4pt}
+    \item Worked remotely with Loan-management Software Company
+    \item Developed applications to transition data using ASP.Net applications
+    \item Worked closely with project manager to ensure correct transistion
+\end{innerlist}
+
+\end{outerlist}
+
+\halfblankline
+
+
+
+\href{http://www.spawar.navy.mil/}{\textbf{Space and Naval Warfare Systems Center - Pacific}},
+San Diego, CA USA
+\begin{outerlist}
+%\vspace{-8pt}
+\item[] \textit{Software Engineer/Scientist}%
+    \hfill \textbf{June 2002 to August 2011}
+    \begin{innerlist}%\vspace{-4pt}
+    \item \textbf{Team Lead White House Situation Room Upgrade Project}
+    \begin{innerlist}%\vspace{-4pt}
+    \item Team lead for Server portion of White House Situation Room Upgrade Project.
+  \item Responsible for Server team development effort in ASP.Net using C\#. Also responsible for scheduling, resource management, and interfacing with Client team. 
+  \item Responsible for managing and mentoring new hires 
+	\end{innerlist}
+	
+	\item \textbf{Lead Software Engineer}
+    \begin{innerlist}%\vspace{-4pt}
+    \item Lead Engineer for a Navy Sponsored Web Based Data Aggregation Project consisting of six Government and Contractor Engineers.  Responsible for tasking engineering team, monitoring progress, and overseeing new features. Also, meeting with client, and helping them develop requirements for project.  
+%  \item Promoted best practices in team, including following guidelines for successful meetings in order to make team meetings more efficient and productive. 
+%  \item Implemented source control for project to better manage software changes and versions.
+  \item Responsible for briefing VIPs, including US Navy Admirals.
+  \item Member of Cyber-Warfare Strategy Planning meeting, which was comprised of senior leadership and outstanding engineers.
+	\end{innerlist}
+	
+		\item \textbf{Software Engineer}
+    \begin{innerlist}%\vspace{-4pt}
+\item Primary Software Engineer for two projects starting with developing a demo from a concept, lead engineer for lifetime of the development cycle, including transition period once project was finished and delivered
+  \item Developed Embedded Application running on Windows Mobile in embedded Visual Basic and embedded C++ deployed and used by USN and US Coast Guard.
+	\end{innerlist}
+
+
+\end{innerlist}
+
+\end{outerlist}
+
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
